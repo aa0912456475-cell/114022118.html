@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>個人履歷</title>
+
+<style>
+    body {
+        font-family: "Microsoft JhengHei", sans-serif;
+        margin: 0;
+        background: #f4f6f9;
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    .section {
+        margin-top: 25px;
+    }
+
+    .section h2 {
+        border-left: 5px solid #3498db;
+        padding-left: 10px;
+        color: #3498db;
+    }
+
+    .info p {
+        margin: 6px 0;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    .btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #2980b9;
+    }
+
+    .dark-mode {
+        background: #1e1e1e;
+        color: #ddd;
+    }
+
+    .dark-mode .container {
+        background: #2c2c2c;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>個人履歷</h1>
+
+    <div class="section info">
+        <h2>基本資料</h2>
+        <p><strong>姓名：</strong>（請填寫）</p>
+        <p><strong>學校：</strong>亞洲大學</p>
+        <p><strong>學號：</strong>114022118</p>
+        <p><strong>Email：</strong>（請填寫）</p>
+    </div>
+
+    <div class="section">
+        <h2>學歷</h2>
+        <ul>
+            <li>亞洲大學（就讀中）</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>技能</h2>
+        <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>（可自行新增）</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>專案經驗</h2>
+        <ul>
+            <li>個人網站製作</li>
+            <li>（可自行新增）</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>自我介紹</h2>
+        <p>
+            我是亞洲大學的學生，對網頁設計與程式開發有興趣，持續學習新技術並提升自我能力。
+        </p>
+    </div>
+
+    <button class="btn" onclick="toggleDarkMode()">切換深色模式</button>
+</div>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
